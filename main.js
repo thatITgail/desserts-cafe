@@ -14,7 +14,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   }
   // 🔹 Fetch menu
-  fetch("./public/data.json")
+  fetch("/public/data.json")
     .then((response) => response.json())
     .then((data) => {
       desserts = data;

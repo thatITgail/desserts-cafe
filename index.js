@@ -18,7 +18,7 @@ window.addEventListener("DOMContentLoaded", (e) => {
   }
 
   // Dynamically fetch and display products
-  fetch("./public/data.json")
+  fetch("/public/data.json")
     .then((Response) => Response.json())
     .then((data) => {
       desserts = data;
