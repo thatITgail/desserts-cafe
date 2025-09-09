@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <!--links-->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css"/>
+  <!--google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <main class="wrapper">
+      <header class="page-title">
+        <h1>Desserts</h1>
+      </header>
+      <section class="product-center">
+        <section class="product-wrapper">
+          <!--item1-->
+          <!-- <article class="product">
+             <div class="product-image-container">
+              <img src="./assets/images/image-waffle-mobile.jpg" class="image">
+              <button class="add-to-cart">
+                <img src="./assets/images/icon-add-to-cart.svg" class="cart-icon"/>
+                <span class="btn-text"> Add to cart</span>
+              </button>
+            </div>
+            <div class="product-content">
+              <p class="product-title">Waffle</p>
+              <h2 class="product-description">Waffle with Berries</h2>
+              <p class="product-price">$6.50</p>
+            </div>
+          </article> -->
+        </section>
+
+        <!-- Cart section -->
+        <aside class="cart-items">
+          <header class="cart-header">
+            Your Cart <span class="no-of-items">(0)</span>
+          </header>
+          <div class="cart-container">
+            <img src="./assets/images/illustration-empty-cart.svg" class="empty-cart"/>
+            <p class="order-message">Your items will appear here</p>
+          </div>
+          <article class="cart-wrapper">
+            <!-- <ul class="cart-selections">
+              <li class="flex">
+                <p class="cart-content">
+                  <strong class="item-title">Classic Tiramisu</strong>
+                  <span class="no-of-times-selected">1x</span>
+                  <span class="item-price">@ $5.50</span>
+                  <span class="total">$5.50</span>
+                </p>
+                <button class="close-btn">
+                  <img src="./assets/images/icon-remove-item.svg" class="close-icon"/>
+                </button>
+              </li>
+              <hr>
+            </ul> -->
+            <!-- <div class="lower-content">
+              <div class="summary">
+                <p class="summary-text">Order Total</p>
+                <h5 class="net-total">$46.50</h5>
+              </div>
+              <div class="safety">
+                <img src="./assets/images/icon-carbon-neutral.svg" class="img" />
+                <p class="safety-text">This is a   <em>carbon-neutral</em> delivery</p>
+              </div>
+              <button class="confirm-order-btn">
+                Confirm Order
+              </button>
+            </div> -->
+          </article>
+        </aside>
+      </section>
+    </main>  
+    <div class="veil hidden"></div>
+    <section class="order-confirmation hidden">
+      <img src="./assets/images/icon-order-confirmed.svg" class="check-icon" />
+      <header class="order-header">
+        <h2 class="order-title">Order Confirmed</h2>
+        <p class="order-message">We hope you enjoy your food!</p>
+      </header>
+      <ul class="cart-selections order" id="order">
+        <!-- <li class="flex order-content">
+          <img src="./assets/images/image-tiramisu-mobile.jpg" class="order-image"/>
+          <div class="cart-content order-details">
+            <h4 class="item-title">Classic Tiramisu</h4>
+            <span class="no-of-times-selected">1x</span>
+            <span class="item-price">@ $5.50</span>
+          </div>
+          <p class="total">$5.50</p>
+        </li> 
+        <hr> -->
+      </ul>
+      <div class="lower-content">
+        <div class="summary flex" id="summary">
+          <p class="summary-text">Order Total</p>
+          <h5 class="net-total" id="order-total"></h5>
+        </div>
+        <button class="new-order-btn" id="close-btn">
+          Start New Order
+        </button>
+      </div>
+    </section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a href="#">Michelle Dim</a>.
+  </div>
+  <!--Javascript-->
+  <script src="index.js"></script>
+</body>
+</html>
