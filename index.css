@@ -44,7 +44,6 @@ hr{
   align-items: center;
   justify-content: space-between;
 }
-
 .wrapper{
   position: relative;
   width: min(30rem, 85%);
@@ -226,17 +225,23 @@ em{
   transform: translate(-50%, -50%);
   width: min(30rem, 100%);
   height: fit-content;
-  /* margin-top: 5rem; */
+  margin-block: 5rem;
   padding: 2rem;
   background-color: #fff;
   box-shadow: 2px 2px 2px var(--Rose-100); 
   border-radius: 1rem;
+  transition: transform 0.3s ease-in-out;
   z-index: 1000;
 }
 
 .order-confirmation.hidden{
   display: none;
 }
+
+/* .order-confirmation.active{
+  display: block;
+  transform: translateX(-50%);
+} */
 .check-icon{
   margin-top: .5rem;
 }

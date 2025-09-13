@@ -1,6 +1,6 @@
 //selecting elements
-window.addEventListener("DOMContentLoaded", (e) => {
-  e.preventDefault();
+window.addEventListener("DOMContentLoaded", () => {
+  
   const menuContainer = document.querySelector(".product-wrapper");
   const veil = document.querySelector(".veil");
 
@@ -26,7 +26,7 @@ window.addEventListener("DOMContentLoaded", (e) => {
       renderMenu();
     })
     .catch((error) => {
-      console.log("Error Loading Menu", error)
+      console.log("Error Loading Menu", error);
       menuContainer.innerHTML = `<p>Sorry, the menu could not be loaded.</p>`
     })
   
@@ -57,11 +57,11 @@ window.addEventListener("DOMContentLoaded", (e) => {
       `
         menuContainer.appendChild(productCard)
 
-      const addBtn = productCard.querySelectorAll(".add-to-cart");
+      const addBtns = productCard.querySelectorAll(".add-to-cart");
       const incrementBtn = productCard.querySelectorAll(".increment-btn");
       const decrementBtn = productCard.querySelectorAll(".decrement-btn");
       
-      addBtn.forEach((btn) => {
+      addBtns.forEach((btn) => {
         btn.addEventListener("click", () => {
           addToCart(dessert);
           renderMenu();
