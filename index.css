@@ -222,20 +222,23 @@ em{
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   width: min(30rem, 100%);
-  height: fit-content;
-  margin-block: 5rem;
+  max-height: 90vh;
   padding: 2rem;
   background-color: #fff;
   box-shadow: 2px 2px 2px var(--Rose-100); 
   border-radius: 1rem;
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+  overflow-y: auto;
   z-index: 1000;
 }
 
 .order-confirmation.hidden{
-  display: none;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.95);
 }
 
 /* .order-confirmation.active{
